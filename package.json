@@ -1,0 +1,12 @@
+{
+  "name": "paint",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.5.0",
+    "parcel": "^2.5.0"
+  }
+}

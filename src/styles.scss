@@ -1,0 +1,64 @@
+body {
+  background-color: aliceblue;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.canvas {
+  background-color: #fff;
+  width: 700px;
+  height: 700px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+
+  .controls__range {
+    margin-bottom: 30px;
+  }
+
+  .controls__btns {
+    margin-bottom: 30px;
+
+    button {
+      all: unset;
+      cursor: pointer;
+      background-color: aliceblue;
+      padding: 5px 0px;
+      width: 80px;
+      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+        0 1px 3px rgba(0, 0, 0, 0.08);
+      border: 3px solid rgba(1, 4, 9, 0.2);
+      color: rgba(1, 4, 9, 0.6);
+      font-weight: 800;
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  .controls__colors {
+    display: flex;
+  }
+
+  .controls__color {
+    margin-right: 0.25rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+}
